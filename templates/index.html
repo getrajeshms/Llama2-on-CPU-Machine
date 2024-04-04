@@ -16,7 +16,7 @@
   </head>
   <body style="background-color:pink;">
     <div class="container">
-      <h1>Running Llama2 on CPU Machine</h1>
+      <h1>Ask Gita</h1>
       <br>
       <hr>
       <br>
@@ -61,7 +61,7 @@
                   question: $("#question").val()
               },
               success: function(result) {
-                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Llama: "+result.response);
+                $("#response").append("<br>Gita: "+$("#question").val()+ "<br> Llama: "+result.response);
                 $("#question").val("")
               },
               error: function(result) {
