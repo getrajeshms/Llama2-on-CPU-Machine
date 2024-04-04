@@ -4,4 +4,5 @@ sentence-transformers==2.2.2
 pypdf
 flask
 faiss-cpu
+cryptography>=3.1
 -e .

@@ -43,14 +43,14 @@ qa_prompt=PromptTemplate(template=template, input_variables=['context', 'questio
 
 
 chain = RetrievalQA.from_chain_type(llm=llm,
-                                   chain_type='stuff',
+                                   chain_type='refine',
                                    retriever=vector_store.as_retriever(search_kwargs={'k': 2}),
                                    return_source_documents=False,
                                    chain_type_kwargs={'prompt': qa_prompt})
 
 
 
-user_input = "Tell me about Rainfall Measurement of the paper"
+user_input = "who is krishna"
 
 
 result=chain({'query':user_input})
