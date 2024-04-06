@@ -22,7 +22,7 @@ documents=loader.load()
 
 #Split Text into Chunks
 text_splitter=RecursiveCharacterTextSplitter(
-                                             chunk_size=500,
+                                             chunk_size=700,
                                              chunk_overlap=50)
 text_chunks=text_splitter.split_documents(documents)
 
